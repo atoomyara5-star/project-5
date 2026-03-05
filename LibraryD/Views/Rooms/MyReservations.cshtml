@@ -1,0 +1,185 @@
+﻿@model IEnumerable<LibraryD.Models.RoomReservation>
+
+@{
+    ViewData["Title"] = "My Reservations";
+    Layout = "_Layout";
+}
+
+<div class="container py-4">
+    <!-- عنوان الصفحة -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card shadow-sm border-0 bg-gradient-info">
+                <div class="card-body p-4">
+                    <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-white p-3 me-3 shadow-sm">
+                            <i class="bi bi-calendar-check-fill text-info fs-3"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-white mb-1">My Room Reservations</h2>
+                            <p class="text-white-50 mb-0">
+                                <i class="bi bi-door-open me-2"></i>
+                                View and manage your room booking requests
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- رسائل التنبيه -->
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show d-flex align-items-center" role="alert">
+            <i class="bi bi-check-circle-fill me-2 fs-4"></i>
+            <div>
+                <strong>Success!</strong> @TempData["Success"]
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show d-flex align-items-center" role="alert">
+            <i class="bi bi-exclamation-triangle-fill me-2 fs-4"></i>
+            <div>
+                <strong>Error!</strong> @TempData["Error"]
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    <!-- بطاقة الحجوزات -->
+    <div class="card shadow border-0">
+        <div class="card-header bg-white py-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <h5 class="mb-0 text-primary">
+                    <i class="bi bi-list-ul me-2"></i>
+                    Your Reservations
+                </h5>
+                <a asp-action="Index" class="btn btn-primary btn-sm">
+                    <i class="bi bi-plus-circle me-1"></i> New Reservation
+                </a>
+            </div>
+        </div>
+
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover align-middle">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Room</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Status</th>
+                            <th class="text-center">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var res in Model)
+                        {
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-door-open text-primary me-2"></i>
+                                        <strong>@(res.Room?.RoomName ?? "N/A")</strong>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <span class="badge bg-light text-dark">
+                                        <i class="bi bi-calendar3 me-1"></i>
+                                        @res.ReservationDate.ToString("yyyy-MM-dd")
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <span class="badge bg-light text-dark">
+                                        <i class="bi bi-clock me-1"></i>
+                                        @res.StartTime.ToString("HH:mm") - @res.EndTime.ToString("HH:mm")
+                                    </span>
+                                </td>
+
+                                <td>
+                                    @{
+                                        string statusClass = res.StatusId == 3 ? "bg-warning text-dark" :
+                                        res.StatusId == 4 ? "bg-success" :
+                                        res.StatusId == 5 ? "bg-danger" : "bg-secondary";
+
+                                        string statusText = res.StatusId == 3 ? "Pending" :
+                                        res.StatusId == 4 ? "Confirmed" :
+                                        res.StatusId == 5 ? "Cancelled" : "Unknown";
+
+                                        string statusIcon = res.StatusId == 3 ? "bi-clock-history" :
+                                        res.StatusId == 4 ? "bi-check-circle-fill" :
+                                        res.StatusId == 5 ? "bi-x-circle-fill" : "bi-question-circle";
+                                    }
+
+                                    <span class="badge @statusClass">
+                                        <i class="bi @statusIcon me-1"></i>
+                                        @statusText
+                                    </span>
+                                </td>
+
+                                <td class="text-center">
+                                    @if (res.StatusId == 3) // Pending
+                                    {
+                                        <form method="post" asp-action="CancelReservation" asp-route-id="@res.ReservationId"
+                                              onsubmit="return confirm('Are you sure you want to cancel this reservation?');">
+                                            @Html.AntiForgeryToken()
+                                            <button type="submit" class="btn btn-outline-danger btn-sm">
+                                                <i class="bi bi-x-circle me-1"></i> Cancel Request
+                                            </button>
+                                        </form>
+                                    }
+                                    else if (res.StatusId == 4) // Confirmed
+                                    {
+                                        var reservationDateTime = res.ReservationDate.ToDateTime(TimeOnly.MinValue).Add(res.StartTime.ToTimeSpan());
+                                        if (reservationDateTime > DateTime.Now.AddHours(24))
+                                        {
+                                            <form method="post" asp-action="CancelReservation" asp-route-id="@res.ReservationId"
+                                                  onsubmit="return confirm('Are you sure you want to cancel this confirmed reservation?');">
+                                                @Html.AntiForgeryToken()
+                                                <button type="submit" class="btn btn-outline-warning btn-sm">
+                                                    <i class="bi bi-x-circle me-1"></i> Cancel
+                                                </button>
+                                            </form>
+                                        }
+                                        else
+                                        {
+                                            <span class="text-muted small">Cannot cancel<br />(&lt;24h)</span>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted">-</span>
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+            @if (!Model.Any())
+            {
+                <div class="text-center py-5">
+                    <i class="bi bi-door-open" style="font-size: 4rem; color: #ccc;"></i>
+                    <h5 class="text-muted mt-3">You have no room reservations yet</h5>
+                    <p class="text-muted mb-4">Book a study room for your group sessions</p>
+                    <a asp-action="Index" class="btn btn-primary px-4">
+                        <i class="bi bi-plus-circle me-2"></i> Browse Available Rooms
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<style>
+    .bg-gradient-info {
+        background: linear-gradient(135deg, #36b9cc 0%, #1a8a9e 100%);
+    }
+</style>

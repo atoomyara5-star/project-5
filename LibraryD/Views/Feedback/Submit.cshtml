@@ -1,0 +1,186 @@
+﻿@{
+    ViewData["Title"] = "Send Feedback";
+    Layout = "_Layout";
+}
+
+<div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <!-- بطاقة رأس الصفحة -->
+            <div class="card shadow-sm border-0 mb-4 bg-gradient-info">
+                <div class="card-body p-4">
+                    <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-white p-3 me-3 shadow-sm">
+                            <i class="bi bi-chat-dots-fill text-info fs-3"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-white mb-1">Send Your Feedback</h2>
+                            <p class="text-white-50 mb-0">
+                                <i class="bi bi-envelope-paper me-2"></i>
+                                We value your opinion! Share your thoughts, suggestions, or concerns with us.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- بطاقة إرسال الفيدباك -->
+            <div class="card shadow border-0">
+                <div class="card-body p-4">
+
+                    <!-- رسائل النجاح والخطأ -->
+                    @if (TempData["Success"] != null)
+                    {
+                        <div class="alert alert-success alert-dismissible fade show d-flex align-items-center" role="alert">
+                            <i class="bi bi-check-circle-fill me-2 fs-4"></i>
+                            <div>
+                                <strong>Success!</strong> @TempData["Success"]
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        </div>
+                    }
+
+                    @if (TempData["Error"] != null)
+                    {
+                        <div class="alert alert-danger alert-dismissible fade show d-flex align-items-center" role="alert">
+                            <i class="bi bi-exclamation-triangle-fill me-2 fs-4"></i>
+                            <div>
+                                <strong>Error!</strong> @TempData["Error"]
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        </div>
+                    }
+
+                    <!-- الفورم -->
+                    <form method="post" asp-action="Submit" class="needs-validation" novalidate>
+                        @Html.AntiForgeryToken()
+
+                        <!-- معلومات المستخدم -->
+                        <div class="bg-light p-3 rounded-3 mb-4">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-person-circle fs-2 text-primary me-3"></i>
+                                <div>
+                                    <h6 class="mb-1">Sending as: <strong>@Context.Session.GetString("UserName")</strong></h6>
+                                    <small class="text-muted">
+                                        <i class="bi bi-envelope me-1"></i>
+                                        @Context.Session.GetString("Email")
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- حقل الرسالة -->
+                        <div class="mb-4">
+                            <label class="form-label fw-bold text-primary">
+                                <i class="bi bi-pencil-square me-2"></i>
+                                Your Message
+                                <span class="text-danger">*</span>
+                            </label>
+                            <textarea name="message"
+                                      class="form-control form-control-lg border-2"
+                                      rows="6"
+                                      required
+                                      placeholder="Write your feedback, suggestions, or concerns here..."></textarea>
+                            <div class="invalid-feedback">
+                                Please enter your feedback message.
+                            </div>
+                            <small class="text-muted">
+                                <i class="bi bi-info-circle me-1"></i>
+                                Your feedback will be sent directly to the library administration.
+                            </small>
+                        </div>
+
+                        <!-- أزرار التحكم -->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a asp-controller="Home" asp-action="Index" class="btn btn-outline-secondary px-4">
+                                <i class="bi bi-arrow-left me-2"></i>
+                                Back to Home
+                            </a>
+                            <button type="submit" class="btn btn-primary px-5 py-2">
+                                <i class="bi bi-send-fill me-2"></i>
+                                Send Feedback
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- بطاقة معلومات إضافية -->
+            <div class="card shadow-sm border-0 mt-4 bg-light">
+                <div class="card-body p-4">
+                    <div class="row">
+                        <div class="col-md-4 mb-3 mb-md-0">
+                            <div class="text-center">
+                                <i class="bi bi-chat-square-text text-primary fs-1"></i>
+                                <h6 class="mt-2">Share Your Thoughts</h6>
+                                <small class="text-muted">Tell us what you think about our services</small>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3 mb-md-0">
+                            <div class="text-center">
+                                <i class="bi bi-lightbulb text-warning fs-1"></i>
+                                <h6 class="mt-2">Suggest Improvements</h6>
+                                <small class="text-muted">Help us make the library better</small>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <i class="bi bi-flag text-success fs-1"></i>
+                                <h6 class="mt-2">Report Issues</h6>
+                                <small class="text-muted">Let us know if you face any problems</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ستايلات إضافية -->
+<style>
+    .bg-gradient-info {
+        background: linear-gradient(135deg, #36b9cc 0%, #1a8a9e 100%);
+    }
+
+    .form-control-lg {
+        border-color: #e2e8f0;
+        transition: all 0.3s;
+    }
+
+        .form-control-lg:focus {
+            border-color: #36b9cc;
+            box-shadow: 0 0 0 0.2rem rgba(54, 185, 204, 0.25);
+        }
+
+    .btn-primary {
+        background: linear-gradient(135deg, #4e73df, #224abe);
+        border: none;
+        transition: all 0.3s;
+    }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(78, 115, 223, 0.3);
+        }
+
+    .btn-outline-secondary:hover {
+        background-color: #f8f9fc;
+        border-color: #b7b9cc;
+    }
+
+    .alert {
+        border-radius: 10px;
+        border: none;
+    }
+
+    .alert-success {
+        background-color: #e0f2e9;
+        color: #1b8140;
+    }
+
+    .alert-danger {
+        background-color: #fce8e8;
+        color: #b02a37;
+    }
+</style>

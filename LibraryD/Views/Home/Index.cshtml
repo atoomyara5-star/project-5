@@ -1,0 +1,127 @@
+﻿@model List<LibraryD.Models.Book>
+
+@{
+    ViewData["Title"] = "Library";
+    Layout = "_Layout";
+}
+
+<!-- Hero Section -->
+<div class="library-hero text-center text-white py-5">
+    <h1 class="display-4 fw-bold">Discover Your Favorite Books Easily</h1>
+    <p class="lead">Browse, explore, and enjoy reading</p>
+
+    <!-- Filter/Search Section -->
+    <form method="get" asp-action="Index" class="d-flex justify-content-center mt-4 flex-wrap gap-2">
+        <input type="text" name="search" value="@ViewBag.Search" placeholder="Search for a book..." class="form-control form-control-lg shadow" style="width:300px;">
+        <select name="categoryId" class="form-select form-select-lg shadow" style="width:200px;">
+            <option value="">All Categories</option>
+            @foreach (var cat in ViewBag.Categories)
+            {
+                <option value="@cat.CategoryId" selected="@(ViewBag.SelectedCategory == cat.CategoryId)">
+                    @cat.CategoryName
+                </option>
+            }
+        </select>
+        <button type="submit" class="btn btn-primary btn-lg shadow">Search</button>
+    </form>
+</div>
+
+<!-- Books Section -->
+<div class="container mt-5">
+    <div class="row g-4">
+        @foreach (var book in Model)
+        {
+            <div class="col-6 col-md-4 col-lg-3 d-flex align-items-stretch">
+                <div class="book-card shadow-lg border-0 rounded overflow-hidden d-flex flex-column align-items-center text-center p-2 w-100">
+                    <img src="@(book.Picture ?? "https://images.pexels.com/photos/46274/pexels-photo-46274.jpeg")"
+                         class="book-img rounded img-fluid mb-2" alt="@book.BookName">
+                    <h5 class="mt-2">@book.BookName</h5>
+                    <p class="text-muted mb-1">@book.Author</p>
+                    <span class="badge @(book.Status?.StatusName == "Available" ? "bg-success" : "bg-danger") mb-2">
+                        @book.Status?.StatusName
+                    </span>
+
+                    <div class="card-footer bg-transparent border-0 mt-auto w-100 text-center">
+                        <button class="btn btn-outline-light w-100 mb-1" disabled>
+                            <i class="bi bi-eye"></i> View Details
+                        </button>
+                        <div class="d-flex justify-content-center">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    @if (!Model.Any())
+    {
+        <div class="text-center py-5">
+            <i class="bi bi-inbox" style="font-size:4rem; color:#adb5bd;"></i>
+            <p class="text-muted mt-3">No books available at the moment</p>
+        </div>
+    }
+</div>
+
+<style>
+    /* Hero Section */
+    .library-hero {
+        background: linear-gradient(135deg, #4B0082, #6a11cb);
+        border-radius: 0 0 50% 50% / 20%;
+        margin-bottom: 3rem;
+    }
+
+    /* Book Cards */
+    .book-card {
+        background: linear-gradient(135deg, #5e2b8a, #7a33c4);
+        color: #fff;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+        .book-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 1rem 2rem rgba(0,0,0,0.5);
+            background: linear-gradient(135deg, #6a11cb, #8b2fe6);
+        }
+
+    .book-img {
+        height: 250px;
+        object-fit: cover;
+        width: 100%;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        border-radius: 0.5rem;
+    }
+
+    /* Buttons */
+    .btn-outline-light {
+        border: 1px solid #d1b3ff;
+        color: #d1b3ff;
+        border-radius: 0.5rem;
+        transition: background 0.3s ease, color 0.3s ease;
+    }
+
+        .btn-outline-light:hover {
+            background-color: rgba(209, 179, 255, 0.9);
+            color: #2c1f3a;
+        }
+
+    /* Stars Rating */
+    .card-footer .bi-star,
+    .card-footer .bi-star-fill {
+        color: #d1b3ff;
+        margin: 0 2px;
+    }
+
+        .card-footer .bi-star-fill:hover {
+            color: #fff;
+        }
+</style>

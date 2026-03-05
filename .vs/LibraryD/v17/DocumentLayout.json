@@ -1,0 +1,673 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\views\\notifications\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\views\\notifications\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\views\\account\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\views\\account\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\views\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\views\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\views\\rooms\\myreservations.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\views\\rooms\\myreservations.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\views\\admin\\overduebooks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\views\\admin\\overduebooks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\views\\admin\\manageborrows.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\views\\admin\\manageborrows.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\controllers\\notificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\controllers\\notificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\views\\rooms\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\views\\rooms\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\views\\admin\\managereservations.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\views\\admin\\managereservations.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\views\\admin\\editbook.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\views\\admin\\editbook.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\views\\admin\\bookslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\views\\admin\\bookslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\views\\admin\\addbook.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\views\\admin\\addbook.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\models\\roomreservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\models\\roomreservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\views\\feedback\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\views\\feedback\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\views\\feedback\\submit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\views\\feedback\\submit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\views\\admin\\userslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\views\\admin\\userslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\models\\borrowing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\models\\borrowing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\views\\profile\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\views\\profile\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\models\\blacklist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\models\\blacklist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|c:\\users\\dell\\desktop\\final update\\libraryd\\libraryd\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{58153963-1C73-4F50-91A0-6F82C8D98E56}|LibraryD\\LibraryD.csproj|solutionrelative:libraryd\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Notifications\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibraryD\\Views\\Notifications\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Notifications\\Index.cshtml",
+              "RelativeToolTip": "LibraryD\\Views\\Notifications\\Index.cshtml",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAswEsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-18T00:05:55.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ForgotPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Account\\ForgotPassword.cshtml",
+              "RelativeDocumentMoniker": "LibraryD\\Views\\Account\\ForgotPassword.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Account\\ForgotPassword.cshtml",
+              "RelativeToolTip": "LibraryD\\Views\\Account\\ForgotPassword.cshtml",
+              "ViewState": "AgIAABwAAAAAAAAAAAAjwCoAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-17T22:25:35.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SignUp.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Account\\SignUp.cshtml",
+              "RelativeDocumentMoniker": "LibraryD\\Views\\Account\\SignUp.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Account\\SignUp.cshtml",
+              "RelativeToolTip": "LibraryD\\Views\\Account\\SignUp.cshtml",
+              "ViewState": "AgIAAMcAAAAAAAAAAAAjwNUAAACUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-17T21:57:02.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Program.cs",
+              "RelativeDocumentMoniker": "LibraryD\\Program.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Program.cs",
+              "RelativeToolTip": "LibraryD\\Program.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAA6wDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-17T18:20:23.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "LibraryD\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "LibraryD\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAgAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-17T18:12:05.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibraryD\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "LibraryD\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAAAH4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-17T18:14:09.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "LibraryD\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "LibraryD\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-27T23:04:36.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "LibraryD\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "LibraryD\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAABwAAAAAAAAAAAAjwCoAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-17T19:41:54.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "LibraryD\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "LibraryD\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAALEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-17T21:09:08.586Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ManageBorrows.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Admin\\ManageBorrows.cshtml",
+              "RelativeDocumentMoniker": "LibraryD\\Views\\Admin\\ManageBorrows.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Admin\\ManageBorrows.cshtml",
+              "RelativeToolTip": "LibraryD\\Views\\Admin\\ManageBorrows.cshtml",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAAwJQAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-17T23:22:37.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "LibraryD\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "LibraryD\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAIoCAAAAAAAAAAAAwKQCAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-17T18:30:06.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "LibraryD\\Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "LibraryD\\Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AgIAAJgBAAAAAAAAAAAAwLIBAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-27T23:41:46.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MyReservations.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Rooms\\MyReservations.cshtml",
+              "RelativeDocumentMoniker": "LibraryD\\Views\\Rooms\\MyReservations.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Rooms\\MyReservations.cshtml",
+              "RelativeToolTip": "LibraryD\\Views\\Rooms\\MyReservations.cshtml",
+              "ViewState": "AgIAAJ4AAAAAAAAAAAAAALgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-17T23:58:43.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "OverdueBooks.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Admin\\OverdueBooks.cshtml",
+              "RelativeDocumentMoniker": "LibraryD\\Views\\Admin\\OverdueBooks.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Admin\\OverdueBooks.cshtml",
+              "RelativeToolTip": "LibraryD\\Views\\Admin\\OverdueBooks.cshtml",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAwEwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-04T19:24:19.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "NotificationsController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Controllers\\NotificationsController.cs",
+              "RelativeDocumentMoniker": "LibraryD\\Controllers\\NotificationsController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Controllers\\NotificationsController.cs",
+              "RelativeToolTip": "LibraryD\\Controllers\\NotificationsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-17T21:39:35.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RoomsController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Controllers\\RoomsController.cs",
+              "RelativeDocumentMoniker": "LibraryD\\Controllers\\RoomsController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Controllers\\RoomsController.cs",
+              "RelativeToolTip": "LibraryD\\Controllers\\RoomsController.cs",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAAwMAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-17T21:21:55.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "LibraryD\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "LibraryD\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAHEBAAAAAAAAAAAAAHwBAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-17T21:19:17.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Rooms\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibraryD\\Views\\Rooms\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Rooms\\Index.cshtml",
+              "RelativeToolTip": "LibraryD\\Views\\Rooms\\Index.cshtml",
+              "ViewState": "AgIAAO8AAAAAAAAAAAAswP8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-17T23:54:10.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ManageReservations.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Admin\\ManageReservations.cshtml",
+              "RelativeDocumentMoniker": "LibraryD\\Views\\Admin\\ManageReservations.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Admin\\ManageReservations.cshtml",
+              "RelativeToolTip": "LibraryD\\Views\\Admin\\ManageReservations.cshtml",
+              "ViewState": "AgIAAAoBAAAAAAAAAAAswBoBAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-17T23:30:37.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "EditBook.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Admin\\EditBook.cshtml",
+              "RelativeDocumentMoniker": "LibraryD\\Views\\Admin\\EditBook.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Admin\\EditBook.cshtml",
+              "RelativeToolTip": "LibraryD\\Views\\Admin\\EditBook.cshtml",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAADoAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-17T23:12:17.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "BooksList.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Admin\\BooksList.cshtml",
+              "RelativeDocumentMoniker": "LibraryD\\Views\\Admin\\BooksList.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Admin\\BooksList.cshtml",
+              "RelativeToolTip": "LibraryD\\Views\\Admin\\BooksList.cshtml",
+              "ViewState": "AgIAACsAAAAAAAAAAAAAAEUAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-17T22:47:07.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AddBook.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Admin\\AddBook.cshtml",
+              "RelativeDocumentMoniker": "LibraryD\\Views\\Admin\\AddBook.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Admin\\AddBook.cshtml",
+              "RelativeToolTip": "LibraryD\\Views\\Admin\\AddBook.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-17T23:00:48.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Books\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibraryD\\Views\\Books\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Books\\Index.cshtml",
+              "RelativeToolTip": "LibraryD\\Views\\Books\\Index.cshtml",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAAAJgAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-19T20:08:20.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "RoomReservation.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Models\\RoomReservation.cs",
+              "RelativeDocumentMoniker": "LibraryD\\Models\\RoomReservation.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Models\\RoomReservation.cs",
+              "RelativeToolTip": "LibraryD\\Models\\RoomReservation.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAxwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-28T00:01:57.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Room.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Models\\Room.cs",
+              "RelativeDocumentMoniker": "LibraryD\\Models\\Room.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Models\\Room.cs",
+              "RelativeToolTip": "LibraryD\\Models\\Room.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-27T23:59:40.281Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "LibraryD\\Controllers\\BooksController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "LibraryD\\Controllers\\BooksController.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAAwIgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-17T21:20:53.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Feedback\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibraryD\\Views\\Feedback\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Feedback\\Index.cshtml",
+              "RelativeToolTip": "LibraryD\\Views\\Feedback\\Index.cshtml",
+              "ViewState": "AgIAAMYAAAAAAAAAAAAAAOAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-20T18:56:37.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Submit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Feedback\\Submit.cshtml",
+              "RelativeDocumentMoniker": "LibraryD\\Views\\Feedback\\Submit.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Feedback\\Submit.cshtml",
+              "RelativeToolTip": "LibraryD\\Views\\Feedback\\Submit.cshtml",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAAALkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-18T00:01:22.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "FeedbackController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Controllers\\FeedbackController.cs",
+              "RelativeDocumentMoniker": "LibraryD\\Controllers\\FeedbackController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Controllers\\FeedbackController.cs",
+              "RelativeToolTip": "LibraryD\\Controllers\\FeedbackController.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAAwIsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-17T21:33:50.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ProfileController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Controllers\\ProfileController.cs",
+              "RelativeDocumentMoniker": "LibraryD\\Controllers\\ProfileController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Controllers\\ProfileController.cs",
+              "RelativeToolTip": "LibraryD\\Controllers\\ProfileController.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAAwFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-17T21:30:43.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "UsersList.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Admin\\UsersList.cshtml",
+              "RelativeDocumentMoniker": "LibraryD\\Views\\Admin\\UsersList.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Admin\\UsersList.cshtml",
+              "RelativeToolTip": "LibraryD\\Views\\Admin\\UsersList.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-17T22:42:38.34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "LibraryD\\Models\\Book.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Models\\Book.cs",
+              "RelativeToolTip": "LibraryD\\Models\\Book.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T20:33:38.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Borrowing.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Models\\Borrowing.cs",
+              "RelativeDocumentMoniker": "LibraryD\\Models\\Borrowing.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Models\\Borrowing.cs",
+              "RelativeToolTip": "LibraryD\\Models\\Borrowing.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T20:33:36.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Profile\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibraryD\\Views\\Profile\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Profile\\Index.cshtml",
+              "RelativeToolTip": "LibraryD\\Views\\Profile\\Index.cshtml",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAAAKUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-17T23:36:58.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Profile\\Edit.cshtml",
+              "RelativeDocumentMoniker": "LibraryD\\Views\\Profile\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Profile\\Edit.cshtml",
+              "RelativeToolTip": "LibraryD\\Views\\Profile\\Edit.cshtml",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAAAGAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-17T23:46:58.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "LibraryD\\Views\\Admin\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeToolTip": "LibraryD\\Views\\Admin\\Dashboard.cshtml",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAAAHYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-17T22:39:40.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "MyDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Models\\MyDbContext.cs",
+              "RelativeDocumentMoniker": "LibraryD\\Models\\MyDbContext.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Models\\MyDbContext.cs",
+              "RelativeToolTip": "LibraryD\\Models\\MyDbContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-27T22:57:30.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Notification.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Models\\Notification.cs",
+              "RelativeDocumentMoniker": "LibraryD\\Models\\Notification.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Models\\Notification.cs",
+              "RelativeToolTip": "LibraryD\\Models\\Notification.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-28T00:04:14.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Blacklist.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Models\\Blacklist.cs",
+              "RelativeDocumentMoniker": "LibraryD\\Models\\Blacklist.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\Models\\Blacklist.cs",
+              "RelativeToolTip": "LibraryD\\Models\\Blacklist.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-27T22:59:39.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\appsettings.json",
+              "RelativeDocumentMoniker": "LibraryD\\appsettings.json",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\final update\\LibraryD\\LibraryD\\appsettings.json",
+              "RelativeToolTip": "LibraryD\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-17T19:08:36.124Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

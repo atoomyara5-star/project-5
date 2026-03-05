@@ -1,0 +1,77 @@
+﻿@model IEnumerable<LibraryD.Models.Borrowing>
+@{
+    ViewData["Title"] = "Overdue Books";
+    Layout = "_AdminLayout";
+}
+
+<div class="row mb-4">
+    <div class="col-12">
+        <h2 class="text-white">Overdue Books</h2>
+        <p class="text-white-50">Books that are past their return date</p>
+    </div>
+</div>
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <i class="bi bi-check-circle-fill me-2"></i>
+        @TempData["Success"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+}
+
+<div class="card shadow">
+    <div class="card-body table-responsive">
+        <table class="table table-hover align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th>Book</th>
+                    <th>Student</th>
+                    <th>Email</th>
+                    <th>Borrow Date</th>
+                    <th>Due Date</th>
+                    <th>Days Overdue</th>
+                    <th class="text-center">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var borrow in Model)
+                {
+                    var daysOverdue = (DateTime.Now - borrow.ReturnDate.Value).Days;
+
+                    <tr>
+                        <td>@borrow.Book?.BookName</td>
+                        <td>@borrow.User?.FirstName @borrow.User?.LastName</td>
+                        <td>@borrow.User?.Email</td>
+                        <td>@borrow.BorrowDate?.ToString("yyyy-MM-dd")</td>
+                        <td class="text-danger fw-bold">@borrow.ReturnDate?.ToString("yyyy-MM-dd")</td>
+                        <td>
+                            <span class="badge bg-danger">@daysOverdue days</span>
+                        </td>
+                        <td class="text-center">
+                            <form method="post" asp-action="SendOverdueNotification" asp-route-id="@borrow.BorrowId" class="d-inline">
+                                <button type="submit" class="btn btn-warning btn-sm">
+                                    <i class="bi bi-bell"></i> Send Reminder
+                                </button>
+                            </form>
+                            <form method="post" asp-action="MarkAsReturned" asp-route-id="@borrow.BorrowId"
+                                  class="d-inline" onsubmit="return confirm('Mark this book as returned?');">
+                                <button type="submit" class="btn btn-success btn-sm">
+                                    <i class="bi bi-arrow-return-left"></i> Mark Returned
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        @if (!Model.Any())
+        {
+            <div class="text-center py-4">
+                <i class="bi bi-emoji-smile" style="font-size: 3rem;"></i>
+                <p class="text-muted mt-2">No overdue books! Great job everyone!</p>
+            </div>
+        }
+    </div>
+</div> 

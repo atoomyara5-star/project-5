@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\LibraryD",
+    "\\LibraryD\\Controllers",
+    "\\LibraryD\\Models",
+    "\\LibraryD\\Views",
+    "\\LibraryD\\Views\\Account",
+    "\\LibraryD\\Views\\Home"
+  ],
+  "SelectedNode": "\\LibraryD\\Views\\Home\\Index.cshtml",
+  "PreviewInSolutionExplorer": false
+}

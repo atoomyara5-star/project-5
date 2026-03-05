@@ -1,0 +1,59 @@
+﻿@model LibraryD.Models.Book
+@{
+    ViewData["Title"] = "Edit Book";
+    Layout = "_AdminLayout";
+}
+
+<div class="card p-4">
+    <h2>Edit Book</h2>
+
+    <form method="post" asp-action="EditBook">
+        <input type="hidden" asp-for="BookId" />
+
+        <div class="mb-3">
+            <label asp-for="BookName"></label>
+            <input asp-for="BookName" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Author"></label>
+            <input asp-for="Author" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="CategoryId">Category</label>
+            <select asp-for="CategoryId" class="form-select" asp-items="ViewBag.Categories"></select>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="StatusId">Status</label>
+            <select asp-for="StatusId" class="form-select" asp-items="ViewBag.Statuses"></select>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Picture">Image URL</label>
+            <input asp-for="Picture" class="form-control" id="Picture" />
+            <div class="mt-2">
+                <img id="previewImage" src="@Model.Picture" alt="Preview" style="max-height:150px;" class="img-thumbnail" />
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-success">Save Changes</button>
+        <a asp-action="BooksList" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
+
+<script>
+    const pictureInput = document.getElementById('Picture');
+    const previewImage = document.getElementById('previewImage');
+
+    pictureInput.addEventListener('input', function() {
+        const url = this.value;
+        if(url) {
+            previewImage.src = url;
+            previewImage.style.display = 'block';
+        } else {
+            previewImage.style.display = 'none';
+        }
+    });
+</script> 

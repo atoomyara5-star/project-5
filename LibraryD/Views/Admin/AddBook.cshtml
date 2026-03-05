@@ -1,0 +1,54 @@
+﻿@model LibraryD.Models.Book
+@{
+    ViewData["Title"] = "Add Book";
+    Layout = "_AdminLayout";
+}
+
+<div class="card p-4">
+    <h2>Add New Book</h2>
+
+    <form method="post" asp-action="AddBook">
+        <div class="mb-3">
+            <label asp-for="BookName" class="form-label"></label>
+            <input asp-for="BookName" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Author" class="form-label"></label>
+            <input asp-for="Author" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="CategoryId" class="form-label">Category</label>
+            <select asp-for="CategoryId" class="form-select" asp-items="ViewBag.Categories">
+                <option value="">Select Category</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Picture" class="form-label">Image URL</label>
+            <input asp-for="Picture" class="form-control" id="Picture" />
+            <div class="mt-2">
+                <img id="previewImage" src="" alt="Preview" style="max-height:150px; display:none;" class="img-thumbnail" />
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Add Book</button>
+        <a asp-action="BooksList" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
+
+<script>
+    const pictureInput = document.getElementById('Picture');
+    const previewImage = document.getElementById('previewImage');
+
+    pictureInput.addEventListener('input', function() {
+        const url = this.value;
+        if(url) {
+            previewImage.src = url;
+            previewImage.style.display = 'block';
+        } else {
+            previewImage.style.display = 'none';
+        }
+    });
+</script> 

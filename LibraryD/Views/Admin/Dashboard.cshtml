@@ -1,0 +1,119 @@
+﻿@{
+    ViewData["Title"] = "Admin Dashboard";
+    Layout = "_AdminLayout";
+}
+
+<div class="row mb-4">
+    <div class="col-12">
+        <h2 class="text-white">Admin Dashboard</h2>
+        <p class="text-white-50">Welcome back, Admin!</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-3 mb-4">
+        <div class="card bg-primary text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6 class="card-title">Total Users</h6>
+                        <h2 class="mb-0">@ViewBag.UsersCount</h2>
+                    </div>
+                    <i class="bi bi-people" style="font-size: 3rem;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 mb-4">
+        <div class="card bg-success text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6 class="card-title">Total Books</h6>
+                        <h2 class="mb-0">@ViewBag.BooksCount</h2>
+                    </div>
+                    <i class="bi bi-book" style="font-size: 3rem;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 mb-4">
+        <div class="card bg-warning text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6 class="card-title">Pending Borrows</h6>
+                        <h2 class="mb-0">@ViewBag.PendingBorrows</h2>
+                    </div>
+                    <i class="bi bi-clock-history" style="font-size: 3rem;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 mb-4">
+        <div class="card bg-info text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6 class="card-title">Pending Reservations</h6>
+                        <h2 class="mb-0">@ViewBag.PendingReservations</h2>
+                    </div>
+                    <i class="bi bi-door-open" style="font-size: 3rem;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <div class="card-header bg-transparent">
+                <h5 class="mb-0">Quick Actions</h5>
+            </div>
+            <div class="card-body">
+                <div class="d-grid gap-2">
+                    <a asp-action="UsersList" class="btn btn-outline-primary">
+                        <i class="bi bi-people"></i> Manage Users
+                    </a>
+                    <a asp-action="BooksList" class="btn btn-outline-success">
+                        <i class="bi bi-book"></i> Manage Books
+                    </a>
+                    <a asp-action="ManageBorrows" class="btn btn-outline-warning">
+                        <i class="bi bi-arrow-left-right"></i> Manage Borrows
+                    </a>
+                    <a asp-action="ManageReservations" class="btn btn-outline-info">
+                        <i class="bi bi-door-open"></i> Manage Reservations
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                   
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <div class="card-header bg-transparent">
+                <h5 class="mb-0">Recent Activity</h5>
+            </div>
+            <div class="card-body">
+                <div class="list-group list-group-flush">
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <span><i class="bi bi-person-plus text-primary"></i> New users today</span>
+                        <span class="badge bg-primary rounded-pill">0</span>
+                    </div>
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <span><i class="bi bi-bookmark-plus text-success"></i> New borrow requests</span>
+                        <span class="badge bg-success rounded-pill">@ViewBag.PendingBorrows</span>
+                    </div>
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <span><i class="bi bi-door-open text-warning"></i> New room reservations</span>
+                        <span class="badge bg-warning rounded-pill">@ViewBag.PendingReservations</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

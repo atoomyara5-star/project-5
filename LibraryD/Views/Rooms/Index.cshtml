@@ -1,0 +1,256 @@
+﻿@model IEnumerable<Room>
+@{
+    ViewData["Title"] = "Meeting Rooms";
+    Layout = "_Layout";
+}
+
+<div class="container py-4">
+    <!-- عنوان الصفحة -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card shadow-sm border-0 bg-gradient-primary">
+                <div class="card-body p-4">
+                    <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-white p-3 me-3 shadow-sm">
+                            <i class="bi bi-door-open-fill text-primary fs-3"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-white mb-1">Meeting & Study Rooms</h2>
+                            <p class="text-white-50 mb-0">
+                                <i class="bi bi-people-fill me-2"></i>
+                                Reserve a room for your study sessions, group meetings, or discussions
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- بطاقة معلومات الحجز -->
+    <div class="card shadow-sm border-0 mb-4 bg-light">
+        <div class="card-body p-3">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <p class="mb-0">
+                        <i class="bi bi-info-circle-fill text-primary me-2"></i>
+                        <strong>Reservation Policy:</strong> Each reservation is for 2 hours.
+                        Operating hours: 8:00 AM - 8:00 PM. You can cancel pending reservations anytime.
+                    </p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <a asp-action="MyReservations" class="btn btn-outline-primary">
+                        <i class="bi bi-calendar-check me-2"></i> My Reservations
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- بطاقات الغرف -->
+    <div class="row g-4">
+        @foreach (var room in Model)
+        {
+            <div class="col-md-6 col-lg-4">
+                <div class="card room-card h-100">
+                    <div class="card-header bg-transparent text-center pt-4">
+                        <div class="room-icon mx-auto">
+                            <i class="bi bi-door-open"></i>
+                        </div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h4 class="card-title fw-bold mb-3">@room.RoomName</h4>
+
+                        <div class="room-details mb-3">
+                            <div class="detail-item">
+                                <i class="bi bi-people-fill text-primary"></i>
+                                <span>Capacity: <strong>@room.Capacity people</strong></span>
+                            </div>
+                            <div class="detail-item mt-2">
+                                <i class="bi bi-clock-fill text-primary"></i>
+                                <span>Duration: <strong>2 hours</strong></span>
+                            </div>
+                        </div>
+
+                        @{
+                            bool isAvailable = room.Status?.StatusName == "Available";
+                            string statusClass = isAvailable ? "bg-success" : "bg-danger";
+                            string statusIcon = isAvailable ? "bi-check-circle-fill" : "bi-x-circle-fill";
+                        }
+
+                        <div class="mb-3">
+                            <span class="badge @statusClass p-2">
+                                <i class="bi @statusIcon me-1"></i>
+                                @(room.Status?.StatusName ?? "Unknown")
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="card-footer bg-transparent border-0 pb-4">
+                        @if (isAvailable)
+                        {
+                            <button type="button" class="btn btn-primary w-100 py-2"
+                                    data-bs-toggle="modal" data-bs-target="#reserveModal@(room.RoomId)">
+                                <i class="bi bi-calendar-plus me-2"></i> Reserve Now
+                            </button>
+                        }
+                        else
+                        {
+                            <button class="btn btn-secondary w-100 py-2" disabled>
+                                <i class="bi bi-x-circle me-2"></i> Not Available
+                            </button>
+                        }
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reserve Modal -->
+            <div class="modal fade" id="reserveModal@(room.RoomId)" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header bg-primary text-white">
+                            <h5 class="modal-title">
+                                <i class="bi bi-door-open me-2"></i>
+                                Reserve @room.RoomName
+                            </h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                        </div>
+                        <form method="post" asp-action="Reserve">
+                            <div class="modal-body">
+                                <input type="hidden" name="roomId" value="@room.RoomId" />
+
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">
+                                        <i class="bi bi-calendar3 me-1 text-primary"></i>
+                                        Reservation Date
+                                    </label>
+                                    <input type="date" name="reservationDate" class="form-control form-control-lg"
+                                           min="@DateTime.Now.ToString("yyyy-MM-dd")"
+                                           value="@DateTime.Now.AddDays(1).ToString("yyyy-MM-dd")" required />
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">
+                                        <i class="bi bi-clock me-1 text-primary"></i>
+                                        Start Time
+                                    </label>
+                                    <input type="time" name="startTime" class="form-control form-control-lg"
+                                           min="08:00" max="18:00"
+                                           value="09:00" required />
+                                    <small class="text-muted d-block mt-2">
+                                        <i class="bi bi-info-circle me-1"></i>
+                                        Operating hours: 8:00 AM - 8:00 PM (2-hour sessions)
+                                    </small>
+                                </div>
+
+                                <div class="alert alert-info">
+                                    <i class="bi bi-clock-history me-2"></i>
+                                    Your reservation will be pending until approved by an admin.
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    <i class="bi bi-x me-1"></i> Cancel
+                                </button>
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="bi bi-check-circle me-1"></i> Submit Request
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    @if (!Model.Any())
+    {
+        <div class="card border-0 shadow-sm p-5 text-center">
+            <i class="bi bi-door-open" style="font-size: 5rem; color: #ccc;"></i>
+            <h3 class="mt-3 text-muted">No Rooms Available</h3>
+            <p class="text-muted mb-4">There are no meeting rooms available at the moment. Please check back later.</p>
+        </div>
+    }
+</div>
+
+<!-- ستايلات إضافية -->
+<style>
+    .bg-gradient-primary {
+        background: linear-gradient(135deg, #4e73df 0%, #224abe 100%);
+    }
+
+    .room-card {
+        border: none;
+        border-radius: 20px;
+        overflow: hidden;
+        transition: all 0.3s;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+
+        .room-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 30px rgba(78, 115, 223, 0.2);
+        }
+
+    .room-icon {
+        width: 100px;
+        height: 100px;
+        background: linear-gradient(135deg, #4e73df20, #224abe20);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+        .room-icon i {
+            font-size: 3.5rem;
+            color: #4e73df;
+        }
+
+    .detail-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        color: #555;
+    }
+
+        .detail-item i {
+            font-size: 1.2rem;
+        }
+
+    .btn-primary {
+        background: linear-gradient(135deg, #4e73df, #224abe);
+        border: none;
+        border-radius: 10px;
+        font-weight: 600;
+        transition: all 0.3s;
+    }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(78, 115, 223, 0.4);
+        }
+
+    .modal-content {
+        border: none;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .modal-header {
+        border-bottom: none;
+    }
+
+    .form-control-lg {
+        border-radius: 10px;
+        border: 2px solid #e2e8f0;
+        transition: all 0.3s;
+    }
+
+        .form-control-lg:focus {
+            border-color: #4e73df;
+            box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
+        }
+</style>

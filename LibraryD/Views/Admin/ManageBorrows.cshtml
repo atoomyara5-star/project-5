@@ -1,0 +1,149 @@
+﻿@model IEnumerable<LibraryD.Models.Borrowing>
+@{
+    ViewData["Title"] = "Manage Borrows";
+    Layout = "_AdminLayout";
+}
+
+<div class="row mb-4">
+    <div class="col-12">
+        <h2 class="text-white">Manage Borrow Requests</h2>
+        <p class="text-white-50">Approve or reject book borrow requests</p>
+    </div>
+</div>
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <i class="bi bi-check-circle-fill me-2"></i>
+        @TempData["Success"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+}
+
+<div class="card shadow">
+    <div class="card-body table-responsive">
+        <table class="table table-hover align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Book</th>
+                    <th>Student</th>
+                    <th>Borrow Date</th>
+                    <th>Return Date</th>
+                    <th>Status</th>
+                    <th class="text-center">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var borrow in Model)
+                {
+                    <tr>
+                        <td>@borrow.BorrowId</td>
+                        <td>@borrow.Book?.BookName</td>
+                        <td>@borrow.User?.FirstName @borrow.User?.LastName</td>
+                        <td>@borrow.BorrowDate?.ToString("yyyy-MM-dd")</td>
+                        <td>
+                            @if (borrow.ReturnDate.HasValue)
+                            {
+                                <span class="@(borrow.ReturnDate < DateTime.Now && borrow.StatusId == 2 ? "text-danger fw-bold" : "")">
+                                    @borrow.ReturnDate.Value.ToString("yyyy-MM-dd")
+                                    @if (borrow.ReturnDate < DateTime.Now && borrow.StatusId == 2)
+                                    {
+                                        <i class="bi bi-exclamation-triangle-fill text-danger ms-1" title="Overdue"></i>
+                                    }
+                                </span>
+                            }
+                            else
+                            {
+                                <span class="text-muted">Not set</span>
+                            }
+                        </td>
+                        <td>
+                            @{
+                                string statusClass = borrow.StatusId == 3 ? "bg-warning text-dark" :
+                                borrow.StatusId == 2 ? "bg-success" :
+                                borrow.StatusId == 5 ? "bg-info" : "bg-secondary";
+                                string statusText = borrow.StatusId == 3 ? "Pending" :
+                                borrow.StatusId == 2 ? "Approved" :
+                                borrow.StatusId == 5 ? "Returned" : "Unknown";
+                            }
+                            <span class="badge @statusClass">@statusText</span>
+                        </td>
+                        <td class="text-center">
+                            @if (borrow.StatusId == 3) // Pending
+                            {
+                                <button type="button" class="btn btn-success btn-sm mb-1"
+                                        data-bs-toggle="modal" data-bs-target="#approveModal@(borrow.BorrowId)">
+                                    <i class="bi bi-check-circle"></i> Approve
+                                </button>
+                                <form method="post" asp-action="RejectBorrow" asp-route-id="@borrow.BorrowId"
+                                      class="d-inline" onsubmit="return confirm('Are you sure you want to reject this request?');">
+                                    <button type="submit" class="btn btn-danger btn-sm mb-1">
+                                        <i class="bi bi-x-circle"></i> Reject
+                                    </button>
+                                </form>
+                            }
+                            else if (borrow.StatusId == 2) // Approved
+                            {
+                                <form method="post" asp-action="MarkAsReturned" asp-route-id="@borrow.BorrowId"
+                                      class="d-inline" onsubmit="return confirm('Mark this book as returned?');">
+                                    <button type="submit" class="btn btn-info btn-sm">
+                                        <i class="bi bi-arrow-return-left"></i> Mark Returned
+                                    </button>
+                                </form>
+                            }
+                            else
+                            {
+                                <span class="text-muted">-</span>
+                            }
+                        </td>
+                    </tr>
+
+                    <!-- Approve Modal -->
+                    <div class="modal fade" id="approveModal@(borrow.BorrowId)" tabindex="-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header bg-success text-white">
+                                    <h5 class="modal-title">
+                                        <i class="bi bi-check-circle me-2"></i>
+                                        Approve Borrow Request
+                                    </h5>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                                </div>
+                                <form method="post" asp-action="ApproveBorrow" asp-route-id="@borrow.BorrowId">
+                                    <div class="modal-body">
+                                        <p><strong>Book:</strong> @borrow.Book?.BookName</p>
+                                        <p><strong>Student:</strong> @borrow.User?.FirstName @borrow.User?.LastName</p>
+
+                                        <div class="mb-3">
+                                            <label class="form-label fw-bold">
+                                                <i class="bi bi-calendar me-1"></i>
+                                                Return Date
+                                            </label>
+                                            <input type="date" name="returnDate" class="form-control"
+                                                   value="@DateTime.Now.AddDays(14).ToString("yyyy-MM-dd")"
+                                                   min="@DateTime.Now.AddDays(1).ToString("yyyy-MM-dd")" required />
+                                            <small class="text-muted">Default: 14 days from now</small>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                        <button type="submit" class="btn btn-success">Approve Request</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </tbody>
+        </table>
+
+        @if (!Model.Any())
+        {
+            <div class="text-center py-4">
+                <i class="bi bi-inbox" style="font-size: 3rem;"></i>
+                <p class="text-muted mt-2">No borrow requests found</p>
+            </div>
+        }
+    </div>
+</div>
